@@ -20,15 +20,21 @@
     
 
     <!-- navbar -->
-    <nav class="navbar nav-pills navbar-expand-lg sticky-sm-top">
+    <nav class="navbar navbar-expand-lg sticky-sm-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/Header-Logo.svg" alt="Bootstrap" width="79" height="40">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <button  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle"  id="navbarText">
+
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="8" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+
             <ul class="navbar-nav ">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -469,6 +475,7 @@
 
 <div class="feature" id="feature">
   <div class="feature-row">
+    
     <div class="image-bg">
       <img src="images/MacBook Air - 66.svg" class="img-fluid" alt="Responsive image">
     </div>
@@ -525,7 +532,7 @@
         
     <div class="tab" data-aos="fade-right"  data-aos-duration="1500">
       <button class="tablinks" onclick="openCity(event, 'all')" id="defaultOpen">All</button>
-      <button class="tablinks" onclick="openCity(event, 'cat1')">Category 1</button>
+      <button class="tablinks" onclick="openCity(event, 'cat1')">Creator-Led Contents</button>
       <button class="tablinks" onclick="openCity(event, 'cat2')">Category 2</button>
       <button class="tablinks" onclick="openCity(event, 'cat3')">Category 3</button>
       <button class="tablinks" onclick="openCity(event, 'cat4')">Category 4</button>

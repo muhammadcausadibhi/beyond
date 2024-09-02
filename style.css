@@ -19,6 +19,10 @@ html{
     padding: 32px 32px 32px 32px !important;
 }
 
+.navbar-toggler span{
+    color: #D8FF00;
+}
+
 
 .container-fluid a{
     color: #D8FF00;
@@ -28,8 +32,10 @@ html{
 
 .navbar-nav li a:hover{
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 900;
+
 }
+
 
 
 .navbar-nav{
@@ -1032,3 +1038,180 @@ footer{
 
 
 
+@media screen and (max-width: 800px) {
+    .banner{
+        width: 100%;
+        padding: 16px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .text h1{
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .banner-image img{
+        width: 20%;
+    }
+
+    .cta-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cl-logo{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .cl-logo img{
+        width: 20%;
+    }
+
+    .about-detail, .about-loc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-map iframe{
+        width: 350px;
+    }
+
+    .sosmed{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .livestream-ch{
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .media-detail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-row, .media-row-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .media-photo{
+        align-items: center;
+    }
+
+    .media-photo img{
+        width: 100%;
+    }
+
+    .talent-detail{
+        padding: 16px;
+    }
+
+
+    .talent-fill{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .talent-row{
+        width: 100%;
+    }
+
+    .feature{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-fill{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 16px;
+    }
+
+    .image-bg img{
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        height: 1500px;
+    }
+
+    .image-bg{
+        background-image:url('images/Mobile-Background\ Filter.jpg');
+
+    }
+
+    .feature-img{
+        overflow-y: hidden;
+        width: 100%;
+    }
+
+    .feature-fill-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 16px;
+        margin-top: -10px;
+    }
+
+    .feature-column{
+        display: flex;
+    }
+
+    .tab{
+        overflow-y: hidden;
+        width: 100% !important;
+        overflow: auto;
+    }
+
+    .tab button {
+        font-size: 12px;
+        padding: 4px 10px;
+        float: none;
+        text-align: center;
+    }
+
+
+    .tabs-con{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tabs-detail{
+        width: 100%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+  }
