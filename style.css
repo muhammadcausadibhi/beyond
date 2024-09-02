@@ -1085,6 +1085,9 @@ footer{
     .about-map iframe{
         width: 350px;
     }
+    .footer-row-logo iframe{
+        width: 350px;
+    }
 
     .sosmed{
         display: flex;
