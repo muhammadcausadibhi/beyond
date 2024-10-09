@@ -153,23 +153,6 @@ transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s
 }
 
 
-a[id="home"]:target~#home {
-    transform: translate3d(0, 0, 0);
-  }
-  a[id="aboutus"]:target~#aboutus {
-    transform: translate3d(0, -100%, 0);
-  }
-  a[id="portfolio"]:target~#portfolio {
-    transform: translate3d(0, -200%, 0);
-  }
-  a[id="services"]:target~#services {
-    transform: translate3d(0, -300%, 0);
-  }
-  a[id="contact"]:target~#contact {
-    transform: translate3d(0, -400%, 0);
-  }
-
-
 /* banner */
 
 .bg-banner{
