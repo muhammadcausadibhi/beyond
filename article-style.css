@@ -39,6 +39,10 @@ nav{
 
 }
 
+.logonav img{
+    animation: navmasuk .7s ease;
+}
+
 @keyframes navmasuk {
     0%{
         opacity: 0;
@@ -52,7 +56,7 @@ nav{
     list-style: none;
     justify-content: center;
     gap: 20px;
-    animation: navmasuk 3s ease;
+    animation: navmasuk .7s ease;
 }
 
 .navcenter ul a {
@@ -146,10 +150,7 @@ transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s
     overflow: hidden;
     text-decoration: none;
     list-style: none;
-}
-
-.navright ul li {
-
+    animation: navmasuk .7s ease;
 }
 
 .navright ul li a{
@@ -199,13 +200,18 @@ ul.breadcrumb {
     align-items: center;
     display: flex;
     justify-content: center;
-    animation: masuk .5s ease;
+    animation: masuk .9s ease;
 }
 
 @keyframes masuk {
     0%{
-        opacity: 0;
-        transform: translateY(50px);
+        /* opacity: 0; */
+        transform: translateY(100px);
+    }
+
+
+    50%{
+        opacity: 50;
     }
 
     100%{
