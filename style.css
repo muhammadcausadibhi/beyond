@@ -15,6 +15,10 @@ html,body{
 
 
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/druk-wide-bold');
+
+
+
 
 /* navbar */
   
@@ -124,7 +128,7 @@ transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s
     color: #D8FF00;
     overflow: hidden;
     text-decoration: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;                  
     transition: .3s ease;
     font-size: 14px;
 }
@@ -179,7 +183,7 @@ section{
     height: 100%;
     width: 100%;
     z-index: 0;
-    background: #262626;
+    /* background: #262626; */
     transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
 }
 .banner{
@@ -192,7 +196,7 @@ section{
 
 
 .text h1{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
     font-weight: 900;
     font-style: normal;
     width: 670px;
@@ -362,13 +366,13 @@ section{
     font-size: 40px;
     font-weight: 700;
     color: #D8FF00;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
 }
 .about-2 h2{
     font-size: 40px;
     font-weight: 700;
     color: #D8FF00;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
 }
 
 .about-1 img{
@@ -460,7 +464,7 @@ section{
 }
 
 .sosmed h2{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
     color: #D8FF00;
     font-size: 24px;
     font-weight: 700;
@@ -493,38 +497,6 @@ section{
 
 
 /* article */
-/*
-.article{
-    width: 100%;
-    background-color: #012921;
-    display: flex;
-    flex-direction: column;
-    border-radius: 35px 35px 0 0;
-
-}
-.article-row .row{
-    display: flex;
-    width: 100%;
-}
-
-
-.article-title h1{
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-
-.title-article{
-    padding: 15px;
-}
-
-.article-logo img{
-    width: 36px;
-    height: 16px;
-} */
-
 
 
 .article-bg{
@@ -532,7 +504,7 @@ section{
     width: 100%;
     position: absolute;
     /* z-index: -1; */
-    height: 60px;
+    height: 60px;   
 }
 .contain {
     width: 100%;
@@ -543,140 +515,122 @@ section{
 }
 
 .article-title{
-    /* background-color: #012921; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 15px;
 }
 
-.art-title{
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-}
-
-.art-title h2{
-    font-weight: 700;
+.article-left h3{
+    font-family: 'Druk Wide Bold', sans-serif;
     font-size: 24px;
-}
-
-
-
-
-.gallery__item{
-    position: relative;
-    text-align: center;
-}
-
-.judul{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-family: "Montserrat", sans-serif;
     color: white;
-}
-
-.judul h2{
-    font-size: 20px;
     font-weight: 900;
-    line-height: 20px;
-    
 }
 
-.judul p{
-    font-size: 14px;
+
+.article-fill{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.gallery {
+.article-top{
     display: grid;
-    column-gap: 0;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-  }
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 5vw);
 
-  
-  
-  .gallery__img {
+}
+
+.article-top img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block; 
-    -webkit-filter: brightness(0.5);
+    transition: .5s ease;
+    opacity: 0.5;
+}
+
+.article-top a{
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+}
+
+.article-top a h4{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Druk Wide Bold', sans-serif;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
   }
 
-  .gallery__item--1 {
+.article-1{
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 4;
+    position: relative;
+    color: white;
     
-  
-  }
-  
-  .gallery__item--2 {
+}
+
+.article-2{
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
-    grid-row-end: 5;
-  
-    /** Alternative Syntax **/
-    /* grid-column: 3 / span 2;  */
-    /* grid-row: 1 / span 2; */
-  }
-  
-.gallery__item--3 {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 5;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
+    grid-row-end: 4;
+        position: relative;
+    color: white;
 }
 
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4;  */
-  /* grid-row: 3 / span 3; */
+.article-3{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+        position: relative;
+    color: white;
 }
 
-.gallery__item--5 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4; */
-  /* grid-row: 6 / span 3; */
+.article-4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+        position: relative;
+    color: white;
+}
+.article-5{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 7;
+        position: relative;
+    color: white;
 }
 
-.gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
+.article-6{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+        position: relative;
+    color: white;
 }
-.gallery__item--7 {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 5;
-  grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
+.article-7{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 7;
+        position: relative;
+    color: white;
 }
-
 
 
 
@@ -695,7 +649,7 @@ section{
     width: 850px;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 15px;
+    margin-top: 55px;
 }
 
 
@@ -706,7 +660,7 @@ section{
 }
 
 .livestream-ch h2{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
     color: #D8FF00;
     font-size: 24px;
     font-weight: 700;
@@ -812,7 +766,7 @@ section{
 .talent-title h2{
     font-size: 24px;
     font-weight: 900;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
     color: #D8FF00;
 }
 
@@ -874,7 +828,7 @@ section{
 }
 
 .feature-title h2{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #D8FF00;
@@ -941,7 +895,7 @@ section{
 
 .ourworks-title{
     margin-top: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Druk Wide Bold', sans-serif;
 }
 
 .ourworks-title h2{
