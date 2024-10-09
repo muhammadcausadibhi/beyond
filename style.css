@@ -3,10 +3,13 @@
     margin: 0;
 }
 
-html{
+html,body{
     scroll-behavior: smooth;
-    background-color: #48009E
+    background-color: #48009E;
+    /* overflow: hidden; */
 }
+
+
 
 
 
@@ -14,50 +17,171 @@ html{
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* navbar */
-.navbar{
+  
+
+
+nav{
     background-color: #48009E;
     padding: 32px 32px 32px 32px !important;
-}
-
-.navbar-toggler span{
-    color: #D8FF00;
-}
-
-
-.container-fluid a{
-    color: #D8FF00;
-    font-size: 14px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.navbar-nav li a:hover{
-    color: #ffffff;
-    font-weight: 900;
-
-}
-
-
-
-.navbar-nav{
-    /* padding: 23px; */
     display: flex;
-    justify-content: center;
-    /* gap: 20px; */
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
 
-.dropdown-menu li a{
-    color: #48009E;
+
+.navcenter ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
 }
+
+.navcenter ul a {
+    float: left;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-width: 50px;
+    display: table;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    color: #777;
+    text-decoration: none;
+}
+
+span {
+    position: relative;
+    z-index: 1;
+    line-height: 24px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+.navcenter ul a:hover span {
+    color: #D8FF00;
+}
+.btnBefore, .btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #000;
+    border-width: 0;
+    border-radius: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #D8FF00;
+    border-radius: 25px;
+}
+.navcenter ul a .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+.navcenter ul a .btnAfter {
+    left: 0;
+    top: 0;
+}
+.navcenter ul a:hover .btnBefore {
+    border-width: 0 0 1px 1px;
+}
+.navcenter ul a:hover .btnAfter {
+    border-width: 1px 1px 0 0;
+}
+
+.navcenter ul a:hover .btnAfter, a:hover .btnBefore {
+height: 100%;
+width: 100%;
+transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+
+.navcenter ul li a{
+    color: #D8FF00;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    transition: .3s ease;
+    font-size: 14px;
+}
+
+.navright ul{
+    overflow: hidden;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navright ul li {
+
+}
+
+.navright ul li a{
+    color: #D8FF00;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    transition: .3s ease;
+    font-size: 14px;
+}
+
+
+a[id="home"]:target~#home {
+    transform: translate3d(0, 0, 0);
+  }
+  a[id="aboutus"]:target~#aboutus {
+    transform: translate3d(0, -100%, 0);
+  }
+  a[id="portfolio"]:target~#portfolio {
+    transform: translate3d(0, -200%, 0);
+  }
+  a[id="services"]:target~#services {
+    transform: translate3d(0, -300%, 0);
+  }
+  a[id="contact"]:target~#contact {
+    transform: translate3d(0, -400%, 0);
+  }
+
 
 /* banner */
 
 .bg-banner{
     background-color: #48009E;
-
+    /* position: absolute; */
+    margin-top: 125px;
 }
 
 
-
+section{
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background: #262626;
+    transition: transform 0.45s cubic-bezier(0, 0, 0.20, 1);
+}
 .banner{
     background-color: #D8FF00;
     font-family: "Montserrat", sans-serif;
